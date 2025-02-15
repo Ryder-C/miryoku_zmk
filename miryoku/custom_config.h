@@ -3,15 +3,16 @@
 
 //#define MIRYOKU_KLUDGE_DOUBLETAPBOOT
 #define MIRYOKU_KLUDGE_SOFT_OFF
+#define MIRYOKU_TAP_QWERTY
 
 #define XXX &none
 
 // FPS friendly tap layer
 #define MIRYOKU_LAYER_GAME \
-&kp TAB,           &kp Q,             &kp W,             &kp E,             &kp R,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
-&kp LSHFT,         &kp A,             &kp S,             &kp D,             &kp F,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
-&kp LCTRL,         &kp Z,             &kp X,             &kp C,             &kp V,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              &kp LALT,          &kp SPC,           &mo U_GAMENUM,     &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+&kp TAB,           &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+&kp LSHFT,         &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
+&kp LCTRL,         &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
+U_NP,          U_NP,              U_NP,              &kp LALT,          &kp SPC,           &mo U_GAMENUM,     &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_GAMENUM \
 &kp ESC,           &kp NUM_1,         &kp NUM_2,         &kp NUM_3,         &kp T,             &kp LBKT,          &kp F7,            &kp F8,            &kp F9,            &kp RBKT,         \
@@ -45,15 +46,15 @@ MIRYOKU_X(GAME,   "Game") \
 MIRYOKU_X(GAMENUM,"GNum")
 
 #define MIRYOKU_LAYERMAPPING_GAME( \
-     K00, K01, K02, K03, K04,      K05, K06, K07, K08, K09, \
-     K10, K11, K12, K13, K14,      K15, K16, K17, K18, K19, \
-     K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
-     N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
+    K00, K01, K02, K03, K04, K05,      K06, K07, K08, K09, K10, \
+    K11, K12, K13, K14, K15, K16,      K17, K18, K19, K20, K21, \
+    K22, K23, K24, K25, K26, K27,      K28, K29, K30, K31, K32, \
+    N33, N34, N35, K36, K37, K38,      K39, K40, K41, N42, N43 \
 ) \
-XXX  K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  &u_to_U_BASE \
-XXX  K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  XXX \
-XXX  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  XXX \
-               K32  K33  K34       K35  K36  K37
+K00  K01  K02  K03  K04  K05       K06  K07  K08  K09  K10  &u_to_U_BASE \
+K11  K12  K13  K14  K15  K16       K17  K18  K19  K20  K21  XXX \
+K22  K23  K24  K25  K26  K27       K28  K29  K30  K31  K32  XXX \
+               K36  K37  K38       K39  K40  K41
 
 #define MIRYOKU_LAYERMAPPING_GAMENUM MIRYOKU_MAPPING
 
