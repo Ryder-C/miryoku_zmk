@@ -1,4 +1,0 @@
-outboard_repository=Ryder-C/rycorne-shield-module
-outboard_ref=main
-outboard_from=boards/shields/ezboard
-outboard_to=boards/shields/ezboard
