@@ -10,14 +10,15 @@ jobs:
       # Specify the board and shield matrix for RyCorne (42-key Corne on nice_nano)
       board: '["nice_nano"]'
       shield: '["corne_left", "corne_right"]'
-      # Use default Miryoku settings unless overridden by custom_config.h or rycorne.conf
+      # Use default Miryoku settings unless overridden by custom_config.h or the automatically found corne.conf
       alphas: '["default"]'
       nav: '["default"]'
       layers: '["default"]'
       mapping: '["default"]'
-      # Point to your custom config and keymap/conf files
-      custom_config: '["#include \\"custom_config.h\\""]'
-      kconfig: '["CONFIG_ZMK_CONFIG=\\"/github/workspace/config\\""]'
+      # Use default for custom_config, as custom_config.h is included by corne.keymap
+      custom_config: '["default"]'
+      # Use default for kconfig, letting the build find config/corne.conf automatically
+      kconfig: '["default"]'
       # Add any specific branches or modules if needed, otherwise leave default
       # branches: '["default"]'
       # modules: '["default"]' 
