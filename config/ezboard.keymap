@@ -1,3 +1,0 @@
-#include "../miryoku/custom_config.h"
-#include "../miryoku/mapping/42/ezboard.h"
-#include "../miryoku/miryoku.dtsi"
