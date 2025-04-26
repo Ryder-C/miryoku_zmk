@@ -13,14 +13,14 @@
 // FPS friendly tap layer
 #define MIRYOKU_LAYER_GAME                                                                         \
     &kp TAB, &kp Q, &kp W, &kp E, &kp R, &kp T, &kp Y, &kp U, &kp I, &kp O, &kp P,                 \
-        &kp LCTRL, &kp A, &kp S, &kp D, &kp F, &kp G, &kp H, &kp J, &kp K, &kp L, &kp SQT,         \
-        &kp LSHFT, &kp Z, &kp X, &kp C, &kp V, &kp B, &kp N, &kp M, &kp COMMA, &kp DOT, &kp SLASH, \
+        &kp LSHFT, &kp A, &kp S, &kp D, &kp F, &kp G, &kp H, &kp J, &kp K, &kp L, &kp SQT,         \
+        &kp LCTRL, &kp Z, &kp X, &kp C, &kp V, &kp B, &kp N, &kp M, &kp COMMA, &kp DOT, &kp SLASH, \
         U_NP, U_NP, U_NP, &kp LALT, &kp SPC, &mo U_GAMENUM, &kp RET, &kp BSPC, &kp DEL, U_NP, U_NP
 
 #define MIRYOKU_LAYER_GAMENUM                                                                           \
     &kp ESC, &kp NUM_1, &kp NUM_2, &kp NUM_3, &kp T, &kp LBKT, &kp F7, &kp F8, &kp F9, &kp RBKT,        \
-        &kp LCTRL, &kp NUM_4, &kp NUM_5, &kp NUM_6, &kp G, &kp EQL, &kp F4, &kp F5, &kp F6, &kp SEMI,   \
-        &kp LSHFT, &kp NUM_7, &kp NUM_8, &kp NUM_9, &kp B, &kp BSLH, &kp F1, &kp F2, &kp F3, &kp GRAVE, \
+        &kp LSHFT, &kp NUM_4, &kp NUM_5, &kp NUM_6, &kp G, &kp EQL, &kp F4, &kp F5, &kp F6, &kp SEMI,   \
+        &kp LCTRL, &kp NUM_7, &kp NUM_8, &kp NUM_9, &kp B, &kp BSLH, &kp F1, &kp F2, &kp F3, &kp GRAVE, \
         U_NP, U_NP, &to U_BASE, &kp SPC, &none, &kp MINUS, &kp NUM_0, &kp DOT, U_NP, U_NP
 
 #define MIRYOKU_LAYERMAPPING_BASE(                           \

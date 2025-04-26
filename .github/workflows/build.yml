@@ -9,7 +9,7 @@ jobs:
     with:
       # Specify the board and shield matrix for Corne (42-key Corne on nice_nano with nice!view)
       board: '["nice_nano_v2"]'
-      shield: '["corne_left nice_view_adapter nice_view", "corne_right nice_view_adapter nice_view"]'
+      shield: '["corne_left nice_view_adapter nice_view_battery", "corne_right nice_view_adapter nice_view_battery"]'
       # Use default Miryoku settings + custom_config.h included via corne.keymap + config/corne.conf
       alphas: '["default"]'
       nav: '["default"]'
@@ -19,4 +19,4 @@ jobs:
       kconfig: '["default"]' # Let the build find config/corne.conf automatically
       # Add any specific branches or modules if needed, otherwise leave default
       # branches: '["default"]'
-      # modules: '["default"]' 
+      modules: '["infely/nice-view-battery/main"]' 
