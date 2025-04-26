@@ -1,4 +1,4 @@
-name: Build RyCorne Firmware
+name: Build Corne Firmware
 
 on: [push, workflow_dispatch]
 
@@ -7,18 +7,16 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      # Specify the board and shield matrix for RyCorne (42-key Corne on nice_nano)
+      # Specify the board and shield matrix for Corne (42-key Corne on nice_nano with nice!view)
       board: '["nice_nano"]'
-      shield: '["corne_left", "corne_right"]'
-      # Use default Miryoku settings unless overridden by custom_config.h or the automatically found corne.conf
+      shield: '["corne_left nice_view_adapter nice_view", "corne_right nice_view_adapter nice_view"]'
+      # Use default Miryoku settings + custom_config.h included via corne.keymap + config/corne.conf
       alphas: '["default"]'
       nav: '["default"]'
       layers: '["default"]'
       mapping: '["default"]'
-      # Use default for custom_config, as custom_config.h is included by corne.keymap
-      custom_config: '["default"]'
-      # Use default for kconfig, letting the build find config/corne.conf automatically
-      kconfig: '["default"]'
+      custom_config: '["default"]' # Let main.yml use its default logic, custom_config.h is included by corne.keymap
+      kconfig: '["default"]' # Let the build find config/corne.conf automatically
       # Add any specific branches or modules if needed, otherwise leave default
       # branches: '["default"]'
       # modules: '["default"]' 
